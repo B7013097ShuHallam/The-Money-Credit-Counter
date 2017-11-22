@@ -79,7 +79,6 @@
             this.penceCredit_lbl = new System.Windows.Forms.Label();
             this.costPerCredit_lbl = new System.Windows.Forms.Label();
             this.costPerCredit_txtbox = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.Coins_grpbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.twoPound_pctbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tenPence_pctbox)).BeginInit();
@@ -274,7 +273,6 @@
             // CoinsEntered_grpbox
             // 
             this.CoinsEntered_grpbox.BackColor = System.Drawing.Color.White;
-            this.CoinsEntered_grpbox.Controls.Add(this.button1);
             this.CoinsEntered_grpbox.Controls.Add(this.twoPoundX_lbl);
             this.CoinsEntered_grpbox.Controls.Add(this.onePoundX_lbl);
             this.CoinsEntered_grpbox.Controls.Add(this.fiftyPenceX_lbl);
@@ -637,15 +635,6 @@
             this.costPerCredit_txtbox.Size = new System.Drawing.Size(96, 20);
             this.costPerCredit_txtbox.TabIndex = 18;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(39, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -738,7 +727,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
     }
 }
 
