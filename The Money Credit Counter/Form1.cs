@@ -16,11 +16,13 @@ namespace The_Money_Credit_Counter
         {
             InitializeComponent();
         }
-        
-        
+        int percredit;
+        int credits;
+
+
         private void credits_txtbox_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -28,24 +30,14 @@ namespace The_Money_Credit_Counter
 
         }
 
-        private void TltValuePound_txtbox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
 
-        private void TtlValuePence_txtbox_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-      
-
+ 
         private void penny_pctbox_Click(object sender, EventArgs e)
         {
             int PennyTotalValue_p;
             int amountClick_Penny;
             double PennyTotalValue_pound;
-            int percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
-            int credits;
+            
             amountClick_Penny = Convert.ToInt16(PennyCounter_lbl.Text);
             PennyCounter_lbl.Text = Convert.ToString(amountClick_Penny+1);
 
@@ -55,6 +47,8 @@ namespace The_Money_Credit_Counter
             PennyTotalValue_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(PennyTotalValue_pound / 100);
 
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
             credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
             credits_txtbox.Text= credits.ToString();
 
@@ -71,6 +65,7 @@ namespace The_Money_Credit_Counter
             int TotalValue20p_p;
             int amountClick_20p;
             double TotalValue20p_pound;
+             percredit=Convert.ToInt16(costPerCredit_txtbox.Text);
             amountClick_20p = Convert.ToInt16(twentyPenceCounter_lbl.Text);
             twentyPenceCounter_lbl.Text = Convert.ToString(amountClick_20p + 1);
 
@@ -79,6 +74,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue20p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue20p_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void twoPence_pctbox_Click(object sender, EventArgs e)
@@ -95,6 +94,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue2p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue2p_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void fiftyPence_pctbox_Click(object sender, EventArgs e)
@@ -110,6 +113,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue50p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue50p_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void fivePence_pctbox_Click(object sender, EventArgs e)
@@ -125,6 +132,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue5p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue5p_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void onePound_pctbox_Click(object sender, EventArgs e)
@@ -140,6 +151,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue1pound_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue1pound_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void tenPence_pctbox_Click(object sender, EventArgs e)
@@ -155,6 +170,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue10p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue10p_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void twoPound_pctbox_Click(object sender, EventArgs e)
@@ -170,6 +189,10 @@ namespace The_Money_Credit_Counter
 
             TotalValue2pound_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
             TltValuePound_txtbox.Text = Convert.ToString(TotalValue2pound_pound / 100);
+
+            percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text = credits.ToString();
         }
 
         private void Reset_btn_Click(object sender, EventArgs e)

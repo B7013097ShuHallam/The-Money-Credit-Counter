@@ -164,7 +164,6 @@
             this.TltValuePound_txtbox.TabIndex = 0;
             this.TltValuePound_txtbox.Text = "0";
             this.TltValuePound_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TltValuePound_txtbox.TextChanged += new System.EventHandler(this.TltValuePound_txtbox_TextChanged);
             // 
             // Pence_lbl
             // 
@@ -194,7 +193,6 @@
             this.TtlValuePence_txtbox.TabIndex = 0;
             this.TtlValuePence_txtbox.Text = "0";
             this.TtlValuePence_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.TtlValuePence_txtbox.TextChanged += new System.EventHandler(this.TtlValuePence_txtbox_TextChanged);
             // 
             // twoPound_pctbox
             // 
