@@ -575,6 +575,7 @@
             this.Reset_btn.TabIndex = 0;
             this.Reset_btn.Text = "Reset";
             this.Reset_btn.UseVisualStyleBackColor = true;
+            this.Reset_btn.Click += new System.EventHandler(this.Reset_btn_Click);
             // 
             // Credits_grpbox
             // 
