@@ -162,6 +162,9 @@
             this.TltValuePound_txtbox.Name = "TltValuePound_txtbox";
             this.TltValuePound_txtbox.Size = new System.Drawing.Size(100, 20);
             this.TltValuePound_txtbox.TabIndex = 0;
+            this.TltValuePound_txtbox.Text = "0";
+            this.TltValuePound_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TltValuePound_txtbox.TextChanged += new System.EventHandler(this.TltValuePound_txtbox_TextChanged);
             // 
             // Pence_lbl
             // 
@@ -189,9 +192,13 @@
             this.TtlValuePence_txtbox.Name = "TtlValuePence_txtbox";
             this.TtlValuePence_txtbox.Size = new System.Drawing.Size(87, 20);
             this.TtlValuePence_txtbox.TabIndex = 0;
+            this.TtlValuePence_txtbox.Text = "0";
+            this.TtlValuePence_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TtlValuePence_txtbox.TextChanged += new System.EventHandler(this.TtlValuePence_txtbox_TextChanged);
             // 
             // twoPound_pctbox
             // 
+            this.twoPound_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.twoPound_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("twoPound_pctbox.Image")));
             this.twoPound_pctbox.Location = new System.Drawing.Point(171, 298);
             this.twoPound_pctbox.Name = "twoPound_pctbox";
@@ -199,9 +206,11 @@
             this.twoPound_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.twoPound_pctbox.TabIndex = 0;
             this.twoPound_pctbox.TabStop = false;
+            this.twoPound_pctbox.Click += new System.EventHandler(this.twoPound_pctbox_Click);
             // 
             // tenPence_pctbox
             // 
+            this.tenPence_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tenPence_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("tenPence_pctbox.Image")));
             this.tenPence_pctbox.Location = new System.Drawing.Point(8, 299);
             this.tenPence_pctbox.Name = "tenPence_pctbox";
@@ -209,9 +218,11 @@
             this.tenPence_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.tenPence_pctbox.TabIndex = 0;
             this.tenPence_pctbox.TabStop = false;
+            this.tenPence_pctbox.Click += new System.EventHandler(this.tenPence_pctbox_Click);
             // 
             // onePound_pctbox
             // 
+            this.onePound_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.onePound_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("onePound_pctbox.Image")));
             this.onePound_pctbox.Location = new System.Drawing.Point(171, 226);
             this.onePound_pctbox.Name = "onePound_pctbox";
@@ -219,9 +230,11 @@
             this.onePound_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.onePound_pctbox.TabIndex = 0;
             this.onePound_pctbox.TabStop = false;
+            this.onePound_pctbox.Click += new System.EventHandler(this.onePound_pctbox_Click);
             // 
             // fivePence_pctbox
             // 
+            this.fivePence_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fivePence_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("fivePence_pctbox.Image")));
             this.fivePence_pctbox.Location = new System.Drawing.Point(8, 226);
             this.fivePence_pctbox.Name = "fivePence_pctbox";
@@ -229,9 +242,11 @@
             this.fivePence_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fivePence_pctbox.TabIndex = 0;
             this.fivePence_pctbox.TabStop = false;
+            this.fivePence_pctbox.Click += new System.EventHandler(this.fivePence_pctbox_Click);
             // 
             // fiftyPence_pctbox
             // 
+            this.fiftyPence_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fiftyPence_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("fiftyPence_pctbox.Image")));
             this.fiftyPence_pctbox.Location = new System.Drawing.Point(171, 148);
             this.fiftyPence_pctbox.Name = "fiftyPence_pctbox";
@@ -239,9 +254,11 @@
             this.fiftyPence_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.fiftyPence_pctbox.TabIndex = 0;
             this.fiftyPence_pctbox.TabStop = false;
+            this.fiftyPence_pctbox.Click += new System.EventHandler(this.fiftyPence_pctbox_Click);
             // 
             // twoPence_pctbox
             // 
+            this.twoPence_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.twoPence_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("twoPence_pctbox.Image")));
             this.twoPence_pctbox.Location = new System.Drawing.Point(8, 148);
             this.twoPence_pctbox.Name = "twoPence_pctbox";
@@ -249,9 +266,11 @@
             this.twoPence_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.twoPence_pctbox.TabIndex = 0;
             this.twoPence_pctbox.TabStop = false;
+            this.twoPence_pctbox.Click += new System.EventHandler(this.twoPence_pctbox_Click);
             // 
             // twentyPence_pctbox
             // 
+            this.twentyPence_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.twentyPence_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("twentyPence_pctbox.Image")));
             this.twentyPence_pctbox.Location = new System.Drawing.Point(171, 71);
             this.twentyPence_pctbox.Name = "twentyPence_pctbox";
@@ -259,9 +278,11 @@
             this.twentyPence_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.twentyPence_pctbox.TabIndex = 0;
             this.twentyPence_pctbox.TabStop = false;
+            this.twentyPence_pctbox.Click += new System.EventHandler(this.twentyPence_pctbox_Click);
             // 
             // penny_pctbox
             // 
+            this.penny_pctbox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.penny_pctbox.Image = ((System.Drawing.Image)(resources.GetObject("penny_pctbox.Image")));
             this.penny_pctbox.Location = new System.Drawing.Point(6, 71);
             this.penny_pctbox.Name = "penny_pctbox";
@@ -269,6 +290,7 @@
             this.penny_pctbox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.penny_pctbox.TabIndex = 0;
             this.penny_pctbox.TabStop = false;
+            this.penny_pctbox.Click += new System.EventHandler(this.penny_pctbox_Click);
             // 
             // CoinsEntered_grpbox
             // 
@@ -546,6 +568,7 @@
             // 
             // Reset_btn
             // 
+            this.Reset_btn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Reset_btn.Location = new System.Drawing.Point(6, 614);
             this.Reset_btn.Name = "Reset_btn";
             this.Reset_btn.Size = new System.Drawing.Size(262, 53);
@@ -607,6 +630,8 @@
             this.credits_txtbox.Name = "credits_txtbox";
             this.credits_txtbox.Size = new System.Drawing.Size(96, 20);
             this.credits_txtbox.TabIndex = 21;
+            this.credits_txtbox.Text = "0";
+            this.credits_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.credits_txtbox.TextChanged += new System.EventHandler(this.credits_txtbox_TextChanged);
             // 
             // penceCredit_lbl
@@ -634,6 +659,8 @@
             this.costPerCredit_txtbox.Name = "costPerCredit_txtbox";
             this.costPerCredit_txtbox.Size = new System.Drawing.Size(96, 20);
             this.costPerCredit_txtbox.TabIndex = 18;
+            this.costPerCredit_txtbox.Text = "0";
+            this.costPerCredit_txtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
@@ -647,6 +674,7 @@
             this.Controls.Add(this.Coins_grpbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "The Money Credit Counter";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Coins_grpbox.ResumeLayout(false);
