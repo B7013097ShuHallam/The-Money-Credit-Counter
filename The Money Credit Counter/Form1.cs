@@ -16,7 +16,8 @@ namespace The_Money_Credit_Counter
         {
             InitializeComponent();
         }
-
+        
+        
         private void credits_txtbox_TextChanged(object sender, EventArgs e)
         {
 
@@ -41,8 +42,10 @@ namespace The_Money_Credit_Counter
         private void penny_pctbox_Click(object sender, EventArgs e)
         {
             int PennyTotalValue_p;
-            double PennyTotalValue_pound;
             int amountClick_Penny;
+            double PennyTotalValue_pound;
+            int percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+            int credits;
             amountClick_Penny = Convert.ToInt16(PennyCounter_lbl.Text);
             PennyCounter_lbl.Text = Convert.ToString(amountClick_Penny+1);
 
@@ -50,10 +53,13 @@ namespace The_Money_Credit_Counter
             TtlValuePence_txtbox.Text = Convert.ToString(PennyTotalValue_p + 1);
 
             PennyTotalValue_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
-            TltValuePound_txtbox.Text = Convert.ToString(PennyTotalValue_pound / 100); 
-            
+            TltValuePound_txtbox.Text = Convert.ToString(PennyTotalValue_pound / 100);
 
-        
+            credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+            credits_txtbox.Text= credits.ToString();
+
+
+
 
 
 
@@ -62,8 +68,8 @@ namespace The_Money_Credit_Counter
 
         private void twentyPence_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_20p;
             int TotalValue20p_p;
+            int amountClick_20p;
             double TotalValue20p_pound;
             amountClick_20p = Convert.ToInt16(twentyPenceCounter_lbl.Text);
             twentyPenceCounter_lbl.Text = Convert.ToString(amountClick_20p + 1);
@@ -77,8 +83,9 @@ namespace The_Money_Credit_Counter
 
         private void twoPence_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_2p;
+       
             int TotalValue2p_p;
+            int amountClick_2p;
             double TotalValue2p_pound;
             amountClick_2p = Convert.ToInt16(twoPenceCounter_lbl.Text);
             twoPenceCounter_lbl.Text = Convert.ToString(amountClick_2p + 1);
