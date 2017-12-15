@@ -16,20 +16,24 @@ namespace The_Money_Credit_Counter
         {
             InitializeComponent();
         }
-        int percredit;
-        int credits;
+        //Global variables
+        int percredit; //What user puts in for per credit text box
+        int credits;  // Amount of credits the user has
 
 
    
  
         private void penny_pctbox_Click(object sender, EventArgs e)
         {
-            int PennyTotalValue_p;
-            int amountClick_Penny;
-            double PennyTotalValue_pound;
+            //Variables 
+            int PennyTotalValue_p; //Penny total value for pence text box
+            int amountClick_Penny; //Amount of times penny is clicked
+            double PennyTotalValue_pound; //Penny total value for pound text box
 
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add penny onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -59,12 +63,15 @@ namespace The_Money_Credit_Counter
 
         private void twentyPence_pctbox_Click(object sender, EventArgs e)
         {
-            int TotalValue20p_p;
-            int amountClick_20p;
-            double TotalValue20p_pound;
+            //variables
+            int TotalValue20p_p; //twenty pence total value for pence text box
+            int amountClick_20p; //Amount of times twenty pence is clicked
+            double TotalValue20p_pound; //Penny total value for pound text box
 
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add twenty pence onto total values
             if (percredit == 0 )
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -85,37 +92,20 @@ namespace The_Money_Credit_Counter
                 credits_txtbox.Text = credits.ToString();
 
             }
-            if (percredit ==  0 )
-            {
-                MessageBox.Show("You have not set the cost of the credit!");
-            }
-            else
-            {
-                percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
-                amountClick_20p = Convert.ToInt16(twentyPenceCounter_lbl.Text);
-                twentyPenceCounter_lbl.Text = Convert.ToString(amountClick_20p + 1);
-
-                TotalValue20p_p = Convert.ToInt16(TtlValuePence_txtbox.Text);
-                TtlValuePence_txtbox.Text = Convert.ToString(TotalValue20p_p + 20);
-
-                TotalValue20p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
-                TltValuePound_txtbox.Text = Convert.ToString(TotalValue20p_pound / 100);
-
-                credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
-                credits_txtbox.Text = credits.ToString();
-
-            }
+         
         }
 
         private void twoPence_pctbox_Click(object sender, EventArgs e)
         {
-       
-            int TotalValue2p_p;
-            int amountClick_2p;
-            double TotalValue2p_pound;
-            
+            //Variables
+            int TotalValue2p_p; //two pence total value for pence text box
+            int amountClick_2p; //Amount of times two pence is clicked
+            double TotalValue2p_pound; //two pence total value for pound text box
+
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add two pence onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -140,12 +130,15 @@ namespace The_Money_Credit_Counter
 
         private void fiftyPence_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_50p;
-            int TotalValue50p_p;
-            double TotalValue50p_pound;
+            //Variables
+            int TotalValue50p_p; //fifty pence total value for pence text box
+            int amountClick_50p; //Amount of times fifty pence is clicked
+            double TotalValue50p_pound; //fifty pence total value for pound text box
 
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add twenty pence onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -170,12 +163,15 @@ namespace The_Money_Credit_Counter
 
         private void fivePence_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_5p;
-            int TotalValue5p_p;
-            double TotalValue5p_pound;
-        
+            //variables 
+            int TotalValue5p_p; //five pence total value for pence text box
+            int amountClick_5p; //Amount of times five pence is clicked
+            double TotalValue5p_pound; //five pence total value for pound text box
+
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add five pence onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -199,12 +195,15 @@ namespace The_Money_Credit_Counter
 
         private void onePound_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_1pound;
-            int TotalValue1pound_p;
-            double TotalValue1pound_pound;
+            //variables
+            int TotalValue1pound_p; //one pound total value for pence text box
+            int amountClick_1pound; //Amount of times one pound is clicked
+            double TotalValue1pound_pound; //one pound total value for pound text box
 
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add one pound onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -228,12 +227,15 @@ namespace The_Money_Credit_Counter
 
         private void tenPence_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_10p;
-            int TotalValue10p_p;
-            double TotalValue10p_pound;
-           
+            //variables
+            int TotalValue10p_p; //ten pence total value for pence text box
+            int amountClick_10p; //Amount of times ten pence is clicked
+            double TotalValue10p_pound; //ten pence total value for pound text box
+
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add ten pence onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -256,12 +258,15 @@ namespace The_Money_Credit_Counter
 
         private void twoPound_pctbox_Click(object sender, EventArgs e)
         {
-            int amountClick_2pound;
-            int TotalValue2pound_p;
-            double TotalValue2pound_pound;
-           
+            //variables
+            int TotalValue2pound_p; //two pound total value for pence text box
+            int amountClick_2pound; //Amount of times two pound is clicked
+            double TotalValue2pound_pound; //two pound total value for pound text box
+
+            //Changes what was put in by user to Integer 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
+            //If 0 is entered into the cost of credit will return message box else will add two pound onto total values
             if (percredit == 0)
             {
                 MessageBox.Show("You have not set the cost of the credit!");
@@ -284,6 +289,7 @@ namespace The_Money_Credit_Counter
 
         private void Reset_btn_Click(object sender, EventArgs e)
         {
+            //Resets all values to 0
             TtlValuePence_txtbox.Text="0";
             TltValuePound_txtbox.Text = "0.00";
             costPerCredit_txtbox.Text = "0";
