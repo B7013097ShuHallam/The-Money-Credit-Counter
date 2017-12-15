@@ -635,7 +635,7 @@
             // penceCredit_lbl
             // 
             this.penceCredit_lbl.AutoSize = true;
-            this.penceCredit_lbl.Location = new System.Drawing.Point(184, 40);
+            this.penceCredit_lbl.Location = new System.Drawing.Point(184, 41);
             this.penceCredit_lbl.Name = "penceCredit_lbl";
             this.penceCredit_lbl.Size = new System.Drawing.Size(13, 13);
             this.penceCredit_lbl.TabIndex = 20;
@@ -671,9 +671,11 @@
             this.Controls.Add(this.CoinsEntered_grpbox);
             this.Controls.Add(this.Coins_grpbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "The Money Credit Counter";
+            this.Text = "Money Credit Counter v2.0";
             this.Coins_grpbox.ResumeLayout(false);
             this.Coins_grpbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.twoPound_pctbox)).EndInit();

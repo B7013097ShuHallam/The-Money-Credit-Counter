@@ -65,7 +65,27 @@ namespace The_Money_Credit_Counter
 
             percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
 
-            if (percredit == 0)
+            if (percredit == 0 )
+            {
+                MessageBox.Show("You have not set the cost of the credit!");
+            }
+            else
+            {
+                percredit = Convert.ToInt16(costPerCredit_txtbox.Text);
+                amountClick_20p = Convert.ToInt16(twentyPenceCounter_lbl.Text);
+                twentyPenceCounter_lbl.Text = Convert.ToString(amountClick_20p + 1);
+
+                TotalValue20p_p = Convert.ToInt16(TtlValuePence_txtbox.Text);
+                TtlValuePence_txtbox.Text = Convert.ToString(TotalValue20p_p + 20);
+
+                TotalValue20p_pound = Convert.ToDouble(TtlValuePence_txtbox.Text);
+                TltValuePound_txtbox.Text = Convert.ToString(TotalValue20p_pound / 100);
+
+                credits = Convert.ToInt16(TtlValuePence_txtbox.Text) / percredit;
+                credits_txtbox.Text = credits.ToString();
+
+            }
+            if (percredit ==  0 )
             {
                 MessageBox.Show("You have not set the cost of the credit!");
             }
